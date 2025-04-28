@@ -1,0 +1,56 @@
+.banner{
+    position: relative;
+    z-index: 1;
+    background-color: $banner-color;
+    border-radius: 25px 25px 0 0 ;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 150px 0 210px;
+    overflow: hidden;
+    .banner-item1{
+        position: absolute;
+        left: -84px;
+        bottom: 0;
+        z-index: -1;
+    }
+    .banner-item2{
+        position: absolute;
+        z-index: -1;
+        top: 145px;
+        right: -40px;
+    }
+}
+@media (max-width:991px) {
+    .banner{
+        border-radius: 20px 20px 0 0 ;
+        padding: 150px 0 120px;
+    }
+    
+}
+@media (max-width:768px) {
+    .banner{
+        top: 8px;
+    }
+    .bottom-header{
+        top: 8px !important;
+    }
+    .header.sticky .bottom-header{
+        top: 3px !important;
+    }
+    
+}
+@media  (max-width:600px) {
+    .banner{
+        .banner-item1{
+            max-width: 120px;
+            left: -40px;
+        }
+        .banner-item2{
+            max-width: 120px;
+            top: 130px;
+            right: -34px;
+        }
+    }
+    
+}

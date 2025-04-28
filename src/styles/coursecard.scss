@@ -1,0 +1,221 @@
+.course-card{
+    background-color: $white-color;
+    border: 1px solid #ebebeb;
+    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+    .card-image{
+        transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        .image{
+            position: relative;
+            overflow: hidden;
+            display: block;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                background-image: linear-gradient(0deg, #3b10e56b, transparent);
+            }
+        }
+        .icon{
+            text-align: center;
+            position: absolute;
+            right: 50%;
+            // left: 0;
+            top: 50%;
+            padding-right: 30px;
+            // bottom: 50%;
+            font-size: 47px;
+            // font-weight: 700;
+            color: $white-color;
+            opacity: 0;
+            stroke-width: 1;
+            transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            transform: translateY(-50%);
+
+        }
+    }
+    &:hover{
+        // transform: translateY(-8px);
+        box-shadow: 0 30px 50px 0 rgba(21, 24, 26, 0.11);
+        .image {
+            &::before{
+                opacity: 1;
+            }
+        }
+        .icon{
+            opacity: 1;
+            padding-right: 0;
+        }
+    }
+    .card-content{
+        padding: 22px 30px;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin-right: 20px;
+                color: $black-color;
+                font-size: 13px;
+            }
+        }
+        .top-info{
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .tutor{
+                color: $main-color;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1;
+                position: relative;
+                cursor: pointer;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    background-color: $main-color;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: 0;
+                    width: 0;
+                    transition: 0.3s ease-in-out;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                       opacity: 1;
+                   }
+
+                }
+
+            }
+            .price{
+                color: $main-color;
+                font-weight: 600;
+                font-size: 17px;
+            
+            }
+        }
+        .title{
+            margin-bottom: 20px;
+            line-height: 0.8;
+            a{
+                font-size: 16px;
+                color: $black-color;
+                font-weight: bold;
+
+            }
+        }
+        .info{
+            .icon{
+                margin-right: 4px;
+            }
+        }
+    }
+}
+.card-popUp{
+    position: absolute;
+    top: 10%;
+    z-index: 1;
+    width: 100%;
+    left: 50%;
+    right: 0%;
+    // display: none;
+    // opacity: 0;
+    // visibility: hidden;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: $white-color;
+    padding: 30px;
+    box-shadow: 0 0 70px rgba(15,38,71,.2);
+    transition: 0.4s ease-in-out;
+    // opacity: 1;
+    // visibility: visible;
+    // &.visible{
+
+    // }
+    .pop-wrapper{
+        .title{
+            h3{
+                font-size: 20px;
+                color: $black-color;
+                font-weight: bold;
+                line-height: 1.3;
+                margin-bottom: 5px;
+            }
+        }
+        .info{
+            h5{
+                font-size: 15px;
+                margin-bottom: 25px;
+                span{
+                    color: $main-color;
+                }
+            }
+            p{
+                font-size: 16px;
+                color: #707070;
+
+            }
+        }
+        .btn{
+            position: relative;
+            width: 100%;
+            display: block;
+            // margin: 26px 0;
+            color: $black-color;
+            background-color: $yellow-color;
+            border: none;
+            line-height: 1;
+            padding: 0 27px;
+            overflow: hidden;
+            border-radius: 4px;
+            transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            span{
+                position: relative;
+                display: inline-block;
+                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                small{
+                    display: block;
+                    padding: 18px 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                    &:nth-child(2){
+                        position: absolute;
+                        left: 50%;
+                        top: 100%;
+                        opacity: 0;
+                        width: 100%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            &:hover{
+                transform: translateY(-4px);
+                box-shadow: 0 8px 14px 0 rgba(16, 18, 19, 0.25); 
+                span{
+                    small{
+                        &:nth-child(1){
+                            opacity: 0;
+                            transform: translateY(-100%);
+                        }
+                        &:nth-child(2){
+                            opacity: 1;
+                            top: 50%;
+                            transform: translate(-50% , -50%);
+                        }
+                    }
+                }
+            }
+        }
+        .btn1{
+            margin-bottom: 10px;
+        }
+    }
+}

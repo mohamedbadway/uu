@@ -1,0 +1,86 @@
+{
+  "users": [],
+  "cart": [],
+  "courses": [
+    {
+      "id": "1",
+      "title": "WordPress Develop Course for Plugins and Themes",
+      "price": 47,
+      "lessons": 12,
+      "level": "Beginner",
+      "tutor": "alen mask",
+      "image": "/images/course_img_1.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "2",
+      "title": "Write Better Emails: Tactics for Team Communication",
+      "price": 10,
+      "lessons": 12,
+      "level": "Intermediate",
+      "tutor": "John miller",
+      "image": "/images/course_img_2.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "3",
+      "title": "Data Science Real-Life Data Science Exercises Included",
+      "price": 22.14,
+      "lessons": 14,
+      "level": "Expert",
+      "tutor": "alen mask",
+      "image": "/images/course_img_3.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "4",
+      "title": "MySQL Database : Beginner SQL Database Design",
+      "price": 14.12,
+      "lessons": 8,
+      "level": "Beginner",
+      "tutor": "Jenny william",
+      "image": "/images/course_img_4.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "5",
+      "title": "Python and Django Full Stack Web Developer Bootcamp",
+      "price": 40.6,
+      "lessons": 10,
+      "level": "Beginner",
+      "tutor": "Jenny william",
+      "image": "/images/course_img_5.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "6",
+      "title": "Data Science Real-Life Data Science Exercises Included",
+      "price": 12,
+      "lessons": 15,
+      "level": "Expert",
+      "tutor": "Matthew ",
+      "image": "/images/course_img_6.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "7",
+      "title": "Machine Learning Hands-On Python and R In Data Science",
+      "price": 20.17,
+      "lessons": 12,
+      "level": "Intermediate",
+      "tutor": "Liza Lou",
+      "image": "/images/course_img_7.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    },
+    {
+      "id": "8",
+      "title": "Google Docs: Free online documents for personal use",
+      "price": 27,
+      "lessons": 5,
+      "level": "Intermediate",
+      "tutor": "Junior Lucy",
+      "image": "/images/course_img_8.jpg",
+      "description": "Changing lives, businesses, and nations through talent transformation in digital technologies."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import "./varibles";
+@import 'animate.css';
+@import "./styles/header.scss";
+@import "./styles/footer.scss";
+@import "./styles/banner.scss";
+@import "./styles/totop.scss";
+@import "./styles/home.scss";
+@import "./styles/coursecard.scss";
+@import "./styles/courses.scss";
+@import "./styles/about.scss";
+@import "./styles/coursedetails.scss";
+@import "./styles/signup.scss";
+@import "./styles/contact.scss";
+@import "./styles/cart.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+
+}
+
+a {
+    text-decoration: none ;
+    color: inherit;
+
+}
+a:hover{
+   color: inherit;
+}
+ol, ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+small{
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
+body{
+    // height: 1000vh;
+    overflow-x: hidden;
+}
+h2{
+    margin: 0 !important;
+}
+.container {
+    max-width: 1320px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width:990px) {
+    .container{
+        max-width: 750px;
+
+    }
+}
+.active{
+    color: $main-color !important;
+}
+.header-icon{
+    font-size: 20px;
+}
+.header{
+    .bottom-header{
+        .col1{
+            ul li:not(:nth-child(4)){
+                padding: 10px;
+            }
+
+        }
+    }
+}
+@media (min-width:371px) and (max-width:500px) {
+    .header-icon{
+        font-size: 20px !important;
+    }
+    .sign-btn{
+        padding: 5px 10px !important;
+    }
+    .header{
+        .bottom-header{
+            .col1{
+                ul li:not(:nth-child(4)){
+                    padding: 8px;
+                }
+    
+            }
+        }
+    }
+    
+}
+@media (max-width:370px) {
+    .header-icon{
+        font-size: 14px !important;
+    }
+    .sign-btn{
+        padding: 4px 8px !important;
+    }
+    .header{
+        .bottom-header{
+            .col1{
+                ul li:not(:nth-child(4)){
+                    padding: 6px;
+                }
+                .header-icons{
+                    .sign-btn{
+                        span small{
+                            font-size: 10px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-list-item{
+        font-size: 13px !important;
+    }
+    
+}
